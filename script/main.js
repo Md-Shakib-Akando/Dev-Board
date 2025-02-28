@@ -11,3 +11,6 @@ document.getElementById("colorBtn").addEventListener("click",function(){
     body.style.backgroundColor=colors[colorIndex];
 })
 
+document.getElementById("blog-btn").addEventListener("click",function(){
+    window.location.href="./Blog.html"
+})

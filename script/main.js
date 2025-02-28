@@ -14,3 +14,7 @@ document.getElementById("colorBtn").addEventListener("click",function(){
 document.getElementById("blog-btn").addEventListener("click",function(){
     window.location.href="./Blog.html"
 })
+
+document.getElementById("Back-Desk").addEventListener("click",function(){
+    window.location.href="./index.html"
+})

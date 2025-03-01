@@ -23,6 +23,8 @@ let monthIndex = d.getMonth();
 let year = d.getFullYear();
 let day=d.getDay();
 
+
+
 let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];

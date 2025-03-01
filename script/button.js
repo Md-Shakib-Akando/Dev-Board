@@ -1,6 +1,12 @@
 
 function buttonsClick(id) {
     alert("Board update successful");
+
+    let d = new Date();
+
+let d1 = d.toDateString();
+
+console.log(d1);
  
 
 }
@@ -33,6 +39,8 @@ document.getElementById("btn-1").addEventListener("click", function() {
     task_dec()
     total_task()
     this.disabled = true; 
+
+
 });
 
 document.getElementById("btn-2").addEventListener("click", function() {

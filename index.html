@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
      
-  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body class=" px-48 ">
     
-    <section class="bg-[#FFFFFF] rounded-xl flex justify-between items-center mt-6 p-4">
-        <div class="flex gap-3 items-center">
-            <img src="assets/logo.png" alt="">
-            <h1 class="text-4xl text-gray-700">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
-        </div>
-        <div class="flex gap-8">
-            <div class="flex gap-2 items-center">
-                <img src="assets/checkbox.png" alt="">
-                <h1 class="text-3xl font-semibold text-[#1E1E1E]">23</h1>
+    <section class="pt-6">
+        <div class="bg-[#FFFFFF] rounded-xl flex justify-between items-center  p-4">
+            <div class="flex gap-3 items-center">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-4xl text-gray-700">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
             </div>
-            <img id="colorBtn" class="cursor-pointer" src="assets/theme-btn.png" alt="">
+            <div class="flex gap-8">
+                <div class="flex gap-2 items-center">
+                    <img src="assets/checkbox.png" alt="">
+                    <h1 id="Total_task" class="text-3xl font-semibold text-[#1E1E1E]">23</h1>
+                </div>
+                <img id="colorBtn" class="cursor-pointer" src="assets/theme-btn.png" alt="">
+            </div>
         </div>
     </section>
 
-     <section class="mt-5 flex gap-6 mb-16">
+     <section class="mt-5 flex gap-6 pb-16">
         <div class="bg-white w-10/12 rounded-xl">
 
 
@@ -38,7 +40,7 @@
                     
                     <div>
                         <h3 class="text-[#00303C]">Task Assigned </h3>
-                        <h1 class="font-bold text-2xl ">6</h1>
+                        <h1 id="task-value" class="font-bold text-2xl ">6</h1>
                     </div>
                 </div>
 
@@ -66,32 +68,29 @@
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">ShopEase</p>
                     <h1 class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements...
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
                             <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
                         </div>
-                        <button class="bg-blue-500  hover:bg-blue-700 text-white  py-1 px-2 rounded">
-                            Completed
-                          </button>
+                        <button id="btn-1" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">ShopEase</p>
                     <h1 class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements...
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
                             <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
                         </div>
-                        <button class="bg-blue-500  hover:bg-blue-700 text-white  py-1 px-2 rounded">
-                            Completed
-                          </button>
+                        <button id="btn-2" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
                 </div>
 
@@ -99,64 +98,57 @@
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">ShopEase</p>
                     <h1 class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements...
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
                             <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
                         </div>
-                        <button class="bg-blue-500  hover:bg-blue-700 text-white  py-1 px-2 rounded">
-                            Completed
-                          </button>
+                        <button id="btn-3" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">ShopEase</p>
                     <h1 class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements...
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
                             <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
                         </div>
-                        <button class="bg-blue-500  hover:bg-blue-700 text-white  py-1 px-2 rounded">
-                            Completed
-                          </button>
+                        <button id="btn-4" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">ShopEase</p>
                     <h1 class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements...
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
                             <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
                         </div>
-                        <button class="bg-blue-500  hover:bg-blue-700 text-white  py-1 px-2 rounded">
-                            Completed
-                          </button>
+                        <button id="btn-5" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
                 </div>
 
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">ShopEase</p>
                     <h1 class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Fix Mobile Button Issue </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements...
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
                             <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
                         </div>
-                        <button class="bg-blue-500  hover:bg-blue-700 text-white  py-1 px-2 rounded">
-                            Completed
-                          </button>
+                        <button id="btn-6" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
                 </div>
 
@@ -182,5 +174,6 @@
     
 
     <script src="script/main.js"></script>
+    <script src="script/button.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 function buttonsClick(id) {
-    alert("Board update successful");
+    alert("Board updated successfully");
 
     
 

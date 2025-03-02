@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <title>Dev Board</title>
-     
+    
+
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                ford: ["Poppins", 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
+
+    
 </head>
-<body class=" px-48 ">
+<body class=" px-48 font-ford">
     
     <section class="pt-6">
         <div class="bg-[#FFFFFF] rounded-xl flex justify-between items-center  p-4">
             <div class="flex gap-3 items-center">
                 <img src="assets/logo.png" alt="">
-                <h1 class="text-4xl text-gray-700">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
+                <h1 class="text-4xl text-gray-700 ">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
             </div>
             <div class="flex gap-8">
                 <div class="flex gap-2 items-center">
@@ -83,12 +104,12 @@
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">CloudSync</p>
                     <h1 id="title-2" class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Add Dark Mode</h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">To implement dark mode, define light and dark styles in CSS, then toggle a .On the body using JavaScript when a button is clicked.
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
-                            <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
+                            <h2 class="font-medium text-[#00303C]">11 April 2025</h2>
                         </div>
                         <button id="btn-2" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
@@ -98,13 +119,11 @@
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">SwiftPay</p>
                     <h1 id="title-3" class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Optimize  Home page </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly
-                    </p>
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">To optimize a homepage, reduce HTTP requests, compress images, use lazy loading, minify CSS/JS, and enable caching.
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
-                            <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
+                            <h2 class="font-medium text-[#00303C]">25 March 2025</h2>
                         </div>
                         <button id="btn-3" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
@@ -118,7 +137,7 @@
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
-                            <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
+                            <h2 class="font-medium text-[#00303C]">31 March 2025</h2>
                         </div>
                         <button id="btn-4" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
@@ -127,12 +146,12 @@
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">Google LLC</p>
                     <h1 id="title-5" class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Integrate OpenAI API </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">To integrate the OpenAI API, generate an API key from OpenAI, then use fetch() (for front-end) or an OpenAI SDK (for back-end).
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
-                            <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
+                            <h2 class="font-medium text-[#00303C]">13 May 2025</h2>
                         </div>
                         <button id="btn-5" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
@@ -141,12 +160,12 @@
                 <div class="bg-[#F4F7FF] p-4 rounded-xl">
                     <p class="bg-white rounded-lg py-1 px-2 w-fit text-gray-700">Glassdoar</p>
                     <h1 id="title-6" class="mt-3 mb-3 text-2xl font-medium text-[#00303C]">Improve Job searching </h1>
-                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                    <p class=" text-gray-500 mb-10 bg-white rounded-xl p-3">To improve job searching, optimize your resume and LinkedIn, use multiple job platforms, network applications follow up to increase.
                     </p>
                     <div class="flex justify-between items-center">
                         <div>
                             <h2 class="text-gray-500">Deadline</h2>
-                            <h2 class="font-medium text-[#00303C]">21 March 2025</h2>
+                            <h2 class="font-medium text-[#00303C]">05 May 2025</h2>
                         </div>
                         <button id="btn-6" class="btn btn-secondary  text-white bg-[#1A77F2] hover:bg-[#4489e3] border-none   rounded">Completed</button>
                     </div>
